@@ -1,0 +1,364 @@
+Tag,繁體中文,English,簡體中文
+LoginLevel,LoginLevel,LoginLevel,LoginLevel
+User,User,User,User
+Engineer,Engineer,Engineer,Engineer
+Admin,Admin,Admin,Admin
+MirleAdmin,MirleAdmin,MirleAdmin,MirleAdmin
+Login,登入,Login,登入
+Logout,登出,Logout,登出
+Login_Success,,,
+Login_Failed,登入失敗,Login Failed,登入失败
+SOC,SOC,SOC,SOC
+電壓,電壓,Voltage,电压
+Warn,Warn,Warn,Warn
+Alarm,Alarm,Alarm,Alarm
+Manual,Manual,Manual,Manual
+Auto,Auto,Auto,Auto
+AlarmCode,AlarmCode,AlarmCode,AlarmCode
+CstReadFail,ReadFail,ReadFail,CstReadFail
+主畫面,主畫面,Main,主画面
+走行相關,走行相關,Move,走行相关
+取放相關,取放相關,Load↓←Unload,取放相关
+充電資訊,充電資訊,Charge,充电信息
+IO監控,IO監控,IO,IO监控
+異常資訊,異常資訊,Alarm↓←Info,异常信息
+參數設定,參數設定,Parameter,参数设定
+程式版本資訊,程式版本資訊,Version,程序版本信息
+Local版本,Local版本,Local,Local版本
+MIPC通訊板本,MIPC通訊板本,MIPC,MIPC通讯板本
+Motion版本,Motion版本,Motion,Motion版本
+Middler版本,Middler版本,Middler,Middler版本
+Middler,Middler,Middler,Middler
+InitialFail,InitialFail,InitialFail,InitialFail
+AGVC,AGVC,AGVC,AGVC
+ID,ID,ID,ID
+Step,Step,Step,Step
+無命令,無命令,No Command,无命令
+命令開始時間,命令開始時間,Command Start Time,命令开始时间
+有貨,有貨,Loading,有货
+無貨,無貨,--,无货
+充電中,充電中,Charging,充电中
+Online,Online,Online,Online
+Offline,Offline,Offline,Offline
+Local_IP,Local IP,Local IP,Local_IP
+MiddlerCommand,MiddlerCommand,MiddlerCommand,MiddlerCommand
+MoveCommand,MoveCommand,MoveCommand,MoveCommand
+LoadUnloadCommand,LoadUnloadCommand,LoadUnloadCommand,LoadUnloadCommand
+AreaSensorDirection,AreaSensorDirection,AreaSensorDirection,AreaSensorDirection
+Loading,Loading Left/Right,Loading Left/Right,Loading Left/Right
+Charging,Charging,Charging,Charging
+Cassette_ID,Cassette ID Left/Right,Cassette ID Left/Right,Cassette_ID Left/Right
+Hide,Hide,Hide,Hide
+IPC關機,IPC關機,Power off,IPC关机
+JogPitch,JogPitch,JogPitch,JogPitch
+圖資顯示,圖資顯示,Map,图资显示
+Slam位置設定,Slam位置設定,Slam Address↓←Setting,Slam位置设定
+狀態監控,狀態監控,Command↓←Info,状态监控
+各軸資訊,各軸資訊,Axis Data,各轴信息
+定位裝置,定位裝置,Locate Driver,定位装置
+走行命令紀錄,走行命令紀錄,Command Record,走行命令纪录
+SLAM定位走行FromTo,SLAM定位,Set Slam Position,SLAM定位
+無法使用搖桿,無法使用搖桿,Can't Using Joystick,无法使用游戏杆
+Auto中,Auto中,Auto,Auto中
+移動命令中,移動命令中,Command Moving,移动命令中
+取放命令中,取放命令中,Fork Busy,取放命令中
+特殊走行流程中,特殊走行流程中,Special Flowing,特殊走行流程中
+Fork_Not_Home,Fork Not Home,Fork Not Home,Fork_Not_Home
+搖桿操作,搖桿操作,Joystick,游戏杆操作
+開啟中,開啟中,Enable,开启中
+關閉中,關閉中,Disable,关闭中
+開啟,開啟,Open,开启
+關閉,關閉,Close,关闭
+AllServoOn,AllServoOn,AllServoOn,AllServoOn
+AllServoOff,AllServoOff,AllServoOff,AllServoOff
+ServoOn,ServoOn,ServoOn,ServoOn
+ServoOff,ServoOff,ServoOff,ServoOff
+線速度,線速度,LineVel,线速度
+線加速度,線加速度,LineAcc,线加速度
+線減速度,線減速度,LineDec,线减速度
+角速度,角速度,ThetaVel,角速度
+角加速度,角加速度,ThetaAcc,角加速度
+角減速度,角減速度,ThetaDec,角减速度
+Real,Real,Real,Real
+設定,設定,Set,设定
+清除,清除,Clear,清除
+軌道偏差,軌道偏差,delta Y,轨道偏差
+角度偏差,角度偏差,delta θ,角度偏差
+不能Auto,不能Auto,Can't Auto,不能Auto
+可以Auto,可以Auto,Can Auto,可以Auto
+狀態,狀態,Status,状态
+停止,停止,Stop,停止
+移動中,移動中,Moving,移动中
+自動站點補正,自動站點補正,Revise By↓←Nearby Address,自动站点补正
+自動Target補正,自動Target補正,Revise By Target,自动Target补正
+移動至路中央,移動至路中央,Move to Section Center,移动至路中央
+Stop,Stop,Stop,Stop
+Move,Move,Move,Move
+Load,Load,Load,Load
+Unload,Unload,Unload,Unload
+LoadUnload,LoadUnload,LoadUnload,LoadUnload
+Start,Start,Start,Start
+指定Address,指定Address,Address ID,指定Address
+車頭角度,車頭角度,AGV Angle,车头角度
+搜尋站點,搜尋站點,Search Address,搜寻站点
+紀錄位置,紀錄位置,Record Locate,纪录位置
+搜尋範圍,搜尋範圍,Search Distance Range,搜寻范围
+搜尋角度,搜尋角度,Search Theta Range,搜寻角度
+軸代號,軸代號,Axis,轴代号
+軸名稱,軸名稱,Axis Name,轴名称
+軸狀態,軸狀態,Move/Stop,轴状态
+Encoder,Encoder,Encoder,Encoder
+RPM,RPM,RPM,RPM
+ServoOnOff,ServoOnOff,ServoOnOff,ServoOnOff
+EC,EC,EC,EC
+MF,MF,MF,MF
+V,V,V,V
+Q軸電流,Q軸電流,QA,Q轴电流
+CommandID,CommandID,CommandID,CommandID
+StartTime,StartTime,StartTime,StartTime
+EndTime,EndTime,EndTime,EndTime
+Result,Result,Result,Result
+AddressID,AddressID,AddressID,AddressID
+一般點位,一般點位,Normal,一般点位
+充電站,充電站,Charging Station,充电站
+取放站,取放站,EQ,取放站
+SlamInfo,SlamInfo,SlamInfo,SlamInfo
+認可目前位置,認可目前位置,Accept Slam Data,认可目前位置
+定位OK,定位OK,Data OK,定位OK
+補正中,,,
+重定位,重定位,Relocate,重定位
+定位NG,定位NG,Data NG,定位NG
+補正異常_距離過遠,,,
+重定位失敗_差距過大,,,
+重定位成功,,,
+SetPosition,SetPosition,SetPosition,SetPosition
+回充電站,回充電站,Move to Charging station,回充电站
+LocalCycleRun,LocalCycleRun,LocalCycleRun,LocalCycleRun
+Address,Address,Address,Address
+Section,Section,Section,Section
+Distance,Distance,Distance,Distance
+MIPC,MIPC,MIPC,MIPC
+Locate,Locate,Locate,Locate
+CmdStatus,CmdStatus,CmdStatus,CmdStatus
+MoveStatus,MoveStatus,MoveStatus,MoveStatus
+CmdEncoder,CmdEncoder,CmdEncoder,CmdEncoder
+Velocity,Velocity,Velocity,Velocity
+Normal,Normal,Normal,Normal
+LowSpeed_High,絳速(高),LowSpeed_High,LowSpeed_High
+LowSpeed_Low,絳速(低),LowSpeed_Low,LowSpeed_Low
+SlowStop,緩停,SlowStop,SlowStop
+EMS,EMS,EMS,EMS
+On,On,On,On
+Off,Off,Off,Off
+轉換後座標,轉換後座標,Transfer Locate,转换后坐标
+原始座標,原始座標,Origin Locate,原始坐标
+最後輸出,最後輸出,最后输出,最后输出
+信心度,信心度,信心度,信心度
+Barcode角度,Barcode角度,BarcodeAngle,Barcode角度
+DriverName,DriverName,DriverName,DriverName
+Status,Status,Status,Status
+DataType,DataType,DataType,DataType
+Map_X,Map_X,Map_X,Map_X
+Map_Y,Map_Y,Map_Y,Map_Y
+Map_Theta,Map_Theta,Map_Theta,Map_Theta
+Trigger,Trigger,Trigger,Trigger
+NotInitial,NotInitial,NotInitial,NotInitial
+Initial,Initial,Initial,Initial
+Ready,Ready,Ready,Ready
+NotReady,NotReady,NotReady,NotReady
+Error,Error,Error,Error
+ResetAlarm,ResetAlarm,ResetAlarm,ResetAlarm
+Closing,Closing,Closing,Closing
+WaitThreadStop,WaitThreadStop,WaitThreadStop,WaitThreadStop
+Closed,Closed,Closed,Closed
+命令移動中,命令移動中,Commanding,命令移动中
+搖桿控制中,搖桿控制中,Joystick,游戏杆控制中
+Fork不在原點,Fork不在原點,ForkNotHome,Fork不在原点
+程式關閉中,程式關閉中,Close Program,程序关闭中
+定位裝置Not_Ready,定位裝置Error,Locate Driver Error,定位装置Not_Ready
+Motion_Not_Ready,Motion Error,Motion Error,Motion_Not_Ready
+MoveControl_ErrorBit_On,ErrorBit On,ErrorBit On,MoveControl_ErrorBit_On
+MoveControl_迷航中_Real,迷航中(Real),迷航中(Real),MoveControl_迷航中_Real
+MoveControl_迷航中_AddressOrSection,迷航中(Address、Section),迷航中(Address、Section),MoveControl_迷航中_AddressOrSection
+MoveControl_偏離路線,偏離路線,Not In Section,MoveControl_偏离路线
+MoveControl_在RTurn路線上,在RTurn路線上,In RTurn Section,MoveControl_在RTurn路线上
+手臂吋動,手臂吋動,Jog,手臂吋动
+原點復歸,原點複歸,Home,原点复归
+手臂半自動,手臂↓←半自動,Manual↓←Command,手臂半自动
+補正測試,補正測試,Alignment↓←Check,补正测试
+命令紀錄,命令紀錄,Command↓←Record,命令纪录
+PIO監控,PIO監控,PIO,PIO监控
+Home設定_站點設定,Home設定↓←Z軸平衡,Home Set↓←Blance Z,Home设定↓←Z轴平衡
+Z軸,,,
+P軸,,,
+Theta軸,,,
+Roller,,,
+Z軸_Slave,,,
+Y軸,,,
+Z軸Jog正,,,
+Z軸Jog負,,,
+Z軸_SlaveJog正,,,
+Z軸_SlaveJog負,,,
+P軸Jog正,,,
+P軸Jog負,,,
+Y軸Jog正,,,
+Y軸Jog負,,,
+Theta軸Jog正,,,
+Theta軸Jog負,,,
+RollerJog正,,,
+RollerJog負,,,
+ForkJogStop,,,
+Z軸原點,,,
+Z軸正極限,,,
+Z軸負極限,,,
+Z軸正定位,,,
+Z軸負定位,,,
+Z軸_Slave_原點,,,
+Z軸_Slave_正極限,,,
+Z軸_Slave_負極限,,,
+P軸原點,,,
+P軸正極限,,,
+P軸負極限,,,
+P軸正定位,,,
+P軸負定位,,,
+Y軸原點,,,
+Y軸正極限,,,
+Y軸負極限,,,
+Theta軸原點,,,
+Theta軸正極限,,,
+Theta軸負極限,,,
+Theta軸正定位,,,
+Theta軸負定位,,,
+Roller_CV入料,,,
+Roller_CV減速,,,
+Roller_CV停止,,,
+Roller_CV荷有,,,
+S軸正定位,,,
+S軸負定位,,,
+二重格檢知_L,,,
+二重格檢知_R,,,
+CST座_在席檢知,,,
+FORK_在席檢知,,,
+Fork_Jog_快,,,
+Fork_Jog_中,,,
+Fork_Jog_慢,,,
+Fork_Jog_強制Bypass,,,
+回Home條件,回Home條件,Home 限制,回Home条件
+回Home條件_內容,1. [P軸原點]和[Theta軸原點]都On↓←2. [Z軸上極限]或[Z軸上位]其中一個On↓←( 以上其中一條滿足即可 ),1. [P Home Sensor]On & [Theta Home Sensor]On↓←2. [Z Limit]On Or [Z PassLine]On↓←,回Home条件_内容
+回Home流程中,回Home流程中!,Homing!,回Home流程中
+Fork_Home,Fork Home,Fork Home,Fork_Home
+Home,Home,Home,Home
+Home_Initial,Home (初始化),Home (Initial),Home_Initial
+命令,命令,Action,命令
+方向,方向,Direct,方向
+Left,Left,Left,Left
+Right,Right,Right,Right
+StageNumber,StageNumber,StageNumber,StageNumber
+速度Percentage,速度(%),Speed(%),速度Percentage
+PIO,PIO,PIO,PIO
+使用,使用,Use,使用
+不使用,不使用,NotUse,不使用
+分解模式,分解模式,StepMode,分解模式
+啟用補正,啟用補正,Revise,启用补正
+啟用,啟用,Use,启用
+不啟用,不啟用,NotUse,不启用
+Start_By_NowAddress,Start By↓←NowAddress,Start By↓←NowAddress,Start_By_NowAddress
+Pause,Pause,Pause,Pause
+Continue,Continue,Continue,Continue
+下一步,下一步,Go Next,下一步
+上一步,上一步,Go Back,上一步
+Command,Command,Command,Command
+ForkHome,ForkHome,ForkHome,ForkHome
+二重格_L,,,
+二重格_R,,,
+儲位,儲位,Storage,储位
+Alignment_P,P,P,Alignment_P
+Alignment_Y,Y,Y,Alignment_Y
+Alignment_Theta,Theta,Theta,Alignment_Theta
+Alignment_Z,Z,Z,Alignment_Z
+左側,左側,Left,左侧
+右側,右側,Right,右侧
+使用圖資偵測,使用圖資偵測,Use↓←Now↓←Address,使用图资侦测
+AlignmentValue,AlignmentValue,AlignmentValue,AlignmentValue
+Barcode資料,Barcode資料,BarcodeData,Barcode资料
+Laser_Front,Laser↓←Front,Laser↓←Front,Laser_Front
+Laser_Back,Laser↓←Back,Laser↓←Back,Laser_Back
+Barcode_ID,ID,ID,Barcode_ID
+Barcode_X,X,X,Barcode_X
+Barcode_Y,Y,Y,Barcode_Y
+NotSendTR_REQ,NotSendTR_REQ,NotSendTR_REQ,NotSendTR_REQ
+NotSendBUSY,NotSendBUSY,NotSendBUSY,NotSendBUSY
+NotForkBusyAction,NotForkBusyAction,NotForkBusyAction,NotForkBusyAction
+NotSendCOMPT,NotSendCOMPT,NotSendCOMPT,NotSendCOMPT
+NotSendAllOff,NotSendAllOff,NotSendAllOff,NotSendAllOff
+電池資訊,,,
+手自動充電,,,
+充電PIO監控,,,
+充電紀錄,,,
+Charging充電中,,,
+左充電,左充電,Left↓←Charg,左充电
+右充電,右充電,Right↓←Charg,右充电
+電磁接觸器,電磁接觸器,Electromagnetic↓←contactor,电磁接触器
+對位Sensor_L,對位Sensor(左),ConfirmSensor,对位Sensor_L
+對位Sensor_R,對位Sensor(右),ConfirmSensor,对位Sensor_R
+電池電壓,電池電壓,V-Battery,电池电压
+電池安培,電池安培,A-Battery,电池安培
+電池溫度,電池溫度,Temp,电池温度
+電表電壓,電表電壓,V-Meter,电表电压
+電表安培,電表安培,A-Meter,电表安培
+安全元件訊號,安全元件訊號,Safety↓←Sensor,安全组件讯号
+IO_測試,IO 測試,IO Test,IO_测试
+DeviceName,DeviceName,DeviceName,DeviceName
+EMO,EMO,EMO,EMO
+IPCEMO,IPCEMO,IPCEMO,IPCEMO
+Input,Input,Input,Input
+Output,Output,Output,Output
+取消自動輸出Output,取消自動輸出Output,IO Test,取消自动输出Output
+現有異常,現有異常,Now Alarm,现有异常
+異常紀錄,異常紀錄,Alarm History,异常纪录
+無動力電中_請按Reset_重新送電,無動力電中↓←請按Reset↓←重新送電,No Power↓←Please Press Reset,无动力电中_请按Reset_重新送电
+清除異常,清除異常,Reset Alarm,清除异常
+Buzz_Off,Buzz Off,Buzz Off,Buzz_Off
+TurnOut,出彎檢查,TurnOut,出弯检查
+LineInterval,直線間距檢查,LineInterval,直线间距检查
+OntimeReviseTheta,角度偏差,Theta Error,角度偏差
+OntimeReviseSectionDeviationLine,軌道偏差,Deviation Error,轨道偏差
+VChangeSafetyDistance,速度監控,Velociyt Error,速度监控
+ChargingCheck,充電檢查,ChargingCheck,充电检查
+ForkHomeCheck,ForkHome檢查,ForkHomeCheck,ForkHome检查
+STurnStop,STurnStop,STurnStop,STurnStop
+STurnStart,STurnStart,STurnStart,STurnStart
+RTurnStop,RTurnStop,RTurnStop,RTurnStop
+RTurnStart,RTurnStart,RTurnStart,RTurnStart
+秒,秒,S,秒
+安全偵測設定,安全偵測設定,Safety,安全侦测设定
+電池保護設定,電池保護設定,Battery,电池保护设定
+PIO_timeout設定,PIO timeout設定,PIO Timeout Setting,PIO_timeout设定
+移動控制參數,移動控制參數,MoveControl,移动控制参数
+其他設定,其他設定,other,其他设定
+Name,Name,Name,Name
+ByPassAlarm,ByPassAlarm,ByPassAlarm,ByPassAlarm
+ByPassSafety,ByPassSafety,ByPassSafety,ByPassSafety
+Reset,Reset,Reset,Reset
+滿充SOC,滿充SOC,Full SOC,满充SOC
+低水位SOC,低水位SOC,Low SOC,低水位SOC
+斷電SOC,斷電SOC,ShutDown SOC,断电SOC
+滿充電壓,滿充電壓,Full V,满充电压
+低水位電壓,低水位電壓,Low V,低水位电压
+斷電電壓,斷電電壓,ShutDown V,断电电压
+充電最大安培,充電最大安培,Max A,充电最大安培
+充電最高溫度,充電最高溫度,Max Temp,充电最高温度
+警報延遲時間,警報延遲時間(ms),Warning delay Time(ms),警报延迟时间
+斷電延遲時間,斷電延遲時間(ms),ShutDown delay Time(ms),断电延迟时间
+溫度警告閥值,溫度警告閥值,Warning Temp,温度警告阀值
+溫度斷電閥值,溫度斷電閥值,ShutDown Temp,温度断电阀值
+省電模式,省電模式,Save Power Mode,省电模式
+Z軸上位Home,Z軸上位Home,CV Can In up locate,Z轴上位Home
+檢查上定位,檢查上定位,Check passline Sensor,检查上定位
+Idle不紀錄CSV,Idle不紀錄CSV,Idle don't log,Idle不纪录CSV
+Gyroscope,Gyroscope,Gyroscope,Gyroscope
+Acceleromete,Acceleromete,Acceleromete,Acceleromete
+Magnetometer,Magnetometer,Magnetometer,Magnetometer
+Orientation,Orientation,Orientation,Orientation
+EulerAngle,EulerAngle,EulerAngle,EulerAngle
+LinearAccelerationa,Linear↓←Accelerationa,Linear↓←Accelerationa,LinearAccelerationa

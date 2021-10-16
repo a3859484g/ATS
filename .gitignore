@@ -1,0 +1,10 @@
+
+##設定不commit 和 push server 資料夾或檔案
+Mirle.Agv.INX/bin/Debug/NLog/
+Mirle.Agv.INX/bin/Debug/Log/
+Mirle.Agv.INX/bin/Debug/CSV/
+Mirle.Agv.INX/bin/Release/NLog/
+Mirle.Agv.INX/bin/Release/Log/
+Mirle.Agv.INX/bin/Release/CSV/
+.vs/
+*.bak

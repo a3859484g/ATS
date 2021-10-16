@@ -1,0 +1,675 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\NUnit3TestAdapter.3.15.1\build\net35\NUnit3TestAdapter.props" Condition="Exists('..\packages\NUnit3TestAdapter.3.15.1\build\net35\NUnit3TestAdapter.props')" />
+  <Import Project="..\packages\NUnit.3.12.0\build\NUnit.props" Condition="Exists('..\packages\NUnit.3.12.0\build\NUnit.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F88F96FD-CDDF-467E-9B1F-ABD97BD7F7C5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Mirle.Agv.INX</RootNamespace>
+    <AssemblyName>Mirle.Agv.INX</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <Prefer32Bit>true</Prefer32Bit>
+    <LangVersion>7.1</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <LangVersion>7.1</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resource\VehHasCarrier.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Communication">
+      <HintPath>OutsideDll\Communication.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Protobuf, Version=3.5.1.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="Keyence.AutoID.SDK">
+      <HintPath>..\..\..\AGV-AUO-和INX合體\Mirle.Agv_AUOxINX\Mirle.Agv\bin\Debug\Keyence.AutoID.SDK.dll</HintPath>
+    </Reference>
+    <Reference Include="Mirle.Agv.UserControls">
+      <HintPath>..\..\..\..\MirleDll\Mirle.Agv.UserControls.dll</HintPath>
+    </Reference>
+    <Reference Include="Mirle.Logger">
+      <HintPath>..\..\..\..\MirleDll\Mirle.Logger.dll</HintPath>
+    </Reference>
+    <Reference Include="Mirle.Tools">
+      <HintPath>..\..\..\..\MirleDll\Mirle.Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="NModbus4, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>OutsideDll\NModbus4.dll</HintPath>
+    </Reference>
+    <Reference Include="NModbus4.Serial, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>OutsideDll\NModbus4.Serial.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework, Version=3.12.0.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnit.3.12.0\lib\net45\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Stateless">
+      <HintPath>DLL\Stateless.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TCPIPTrxControl, Version=1.0.7.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\MirleDll\TCPIPTrxControl.dll</HintPath>
+    </Reference>
+    <Reference Include="VncClientControlCommon">
+      <HintPath>OutsideDll\VncClientControlCommon.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="LoadUnloadControl\Control\LoadUnloadControlHandler.cs" />
+    <Compile Include="LoadUnloadControl\Control\LoadUnload\LoadUnload.cs" />
+    <Compile Include="LoadUnloadControl\Control\LoadUnload\LoadUnload_AGC.cs" />
+    <Compile Include="LoadUnloadControl\Control\LoadUnload\LoadUnload_ATMS.cs" />
+    <Compile Include="LoadUnloadControl\Control\LoadUnload\LoadUnload_ATS.cs" />
+    <Compile Include="LoadUnloadControl\Control\LoadUnload\LoadUnload_PTI.cs" />
+    <Compile Include="LoadUnloadControl\Control\LoadUnload\LoadUnLoad_Simulation.cs" />
+    <Compile Include="LoadUnloadControl\Control\LoadUnload\LoadUnload_UMTC.cs" />
+    <Compile Include="LoadUnloadControl\Control\PIO\ChargingPIO\PIOFlow_ATS_Charging.cs" />
+    <Compile Include="LoadUnloadControl\Control\PIO\LoadUnloadPIO\PIOFlow_ATMS_LoadUnload.cs" />
+    <Compile Include="LoadUnloadControl\Control\PIO\LoadUnloadPIO\PIOFlow_PTI_LoadUnloadSemi.cs" />
+    <Compile Include="LoadUnloadControl\Control\PIO\LoadUnloadPIO\PIOFlow_UMTC_LoadUnloadSemi.cs" />
+    <Compile Include="LoadUnloadControl\Control\PIO\PIOFlow.cs" />
+    <Compile Include="LoadUnloadControl\Control\PIO\LoadUnloadPIO\PIOFlow_AGC_LoadUnload.cs" />
+    <Compile Include="LoadUnloadControl\Control\PIO\ChargingPIO\PIOFlow_Charging.cs" />
+    <Compile Include="LoadUnloadControl\Control\PIO\ChargingPIO\PIOFlow_UMTC_Charging.cs" />
+    <Compile Include="LoadUnloadControl\LoadUnLoadDefine.cs" />
+    <Compile Include="LoadUnloadControl\Model\AddressAlignmentValueOffset.cs" />
+    <Compile Include="LoadUnloadControl\Model\AlignmentValueData.cs" />
+    <Compile Include="LoadUnloadControl\Model\LoadUnloadAxisData.cs" />
+    <Compile Include="LoadUnloadControl\Model\LoadUnloadOffset.cs" />
+    <Compile Include="LoadUnloadControl\Model\LoadUnloadRobotCommand.cs" />
+    <Compile Include="LoadUnloadControl\Model\PIODataAndTime.cs" />
+    <Compile Include="LoadUnloadControl\Model\StageData.cs" />
+    <Compile Include="LoadUnloadControl\Model\StageNumberToBarcodeReaderConfig.cs" />
+    <Compile Include="LoadUnloadControl\Model\StageNumberToBarcodeReaderSetting.cs" />
+    <Compile Include="Main\Control\Tools\BarcodeReader\RFIDReader_OMRON.cs" />
+    <Compile Include="Main\Control\Tools\CantopsHPIO\PIO_Cantops.cs" />
+    <Compile Include="Main\Control\Tools\DistanceSensor\DistanceSensor.cs" />
+    <Compile Include="Main\Control\Tools\DistanceSensor\DistanceSensor_Keyence.cs" />
+    <Compile Include="Main\Control\Tools\RFIDReader\RFIDReader.cs" />
+    <Compile Include="Main\Control\Tools\陀螺儀\LPMS.cs" />
+    <Compile Include="Main\Model\DataDelayAndChange.cs" />
+    <Compile Include="LoadUnloadControl\Model\LoadUnloadCommandData.cs" />
+    <Compile Include="LoadUnloadControl\Model\LoadUnloadControlData.cs" />
+    <Compile Include="Main\Control\ComputeFunction.cs" />
+    <Compile Include="Main\Control\MainFlowHandler.cs" />
+    <Compile Include="Main\Control\Tools\BarcodeReader\BarcodeReader.cs" />
+    <Compile Include="Main\Control\Tools\BarcodeReader\BarcodeReader_Datalogic.cs" />
+    <Compile Include="Main\Control\Tools\BarcodeReader\BarcodeReader_Keyence.cs" />
+    <Compile Include="Main\Control\Tools\CRC\Crc32.cs" />
+    <Compile Include="Main\Control\UserAgent.cs" />
+    <Compile Include="Main\Model\BatteryInfo.cs" />
+    <Compile Include="Main\Model\BatteryConfig.cs" />
+    <Compile Include="Main\Model\CommunicationData.cs" />
+    <Compile Include="Main\Model\DrawMap\DrawMapData.cs" />
+    <Compile Include="Main\Model\DrawMap\DrawMapSection.cs" />
+    <Compile Include="Main\Model\Map\MapAGVPosition.cs" />
+    <Compile Include="Main\Model\Configs\MapConfig.cs" />
+    <Compile Include="Main\Model\localData\LocalData.cs" />
+    <Compile Include="Main\Model\Map\ObjectData.cs" />
+    <Compile Include="Main\Model\Tools\LPMSData.cs" />
+    <Compile Include="Main\Model\Tools\Vector3.cs" />
+    <Compile Include="Main\Model\Tools\Vector4.cs" />
+    <Compile Include="Main\Model\TransferStepInfo\AlarmCodeAndSetOrReset.cs" />
+    <Compile Include="Main\View\ProFaceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\View\ProFaceForm.Designer.cs">
+      <DependentUpon>ProFaceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\View\UserControls\KeyboardNumber.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Main\View\UserControls\KeyboardNumber.Designer.cs">
+      <DependentUpon>KeyboardNumber.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\View\UserControls\LabelAndTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Main\View\UserControls\LabelAndTextBox.Designer.cs">
+      <DependentUpon>LabelAndTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\View\UserControls\LabelList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Main\View\UserControls\LabelList.Designer.cs">
+      <DependentUpon>LabelList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\View\UserControls\LabelNameAndValue.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Main\View\UserControls\LabelNameAndValue.Designer.cs">
+      <DependentUpon>LabelNameAndValue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\View\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\View\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\View\UserControls\AddressPicture.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Main\View\UserControls\AddressPicture.Designer.cs">
+      <DependentUpon>AddressPicture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\View\UserControls\LoginForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Main\View\UserControls\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\View\UserControls\MoveControlConfig_Safety.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Main\View\UserControls\MoveControlConfig_Safety.Designer.cs">
+      <DependentUpon>MoveControlConfig_Safety.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\View\UserControls\MoveControlConfig_SensorBypass.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Main\View\UserControls\MoveControlConfig_SensorBypass.Designer.cs">
+      <DependentUpon>MoveControlConfig_SensorBypass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\View\UserControls\PIOForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Main\View\UserControls\PIOForm.Designer.cs">
+      <DependentUpon>PIOForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\View\UserControls\PIOHistoryForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Main\View\UserControls\PIOHistoryForm.Designer.cs">
+      <DependentUpon>PIOHistoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\View\UserControls\PIOTimeAndValueUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Main\View\UserControls\PIOTimeAndValueUserControl.Designer.cs">
+      <DependentUpon>PIOTimeAndValueUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\View\UserControls\ProgramVersion.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Main\View\UserControls\ProgramVersion.Designer.cs">
+      <DependentUpon>ProgramVersion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\View\UserControls\SafetySensorByPass.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Main\View\UserControls\SafetySensorByPass.Designer.cs">
+      <DependentUpon>SafetySensorByPass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MiddlePackage\Alarms\Alarm.cs" />
+    <Compile Include="MiddlePackage\Alarms\AlarmArgs.cs" />
+    <Compile Include="MiddlePackage\Alarms\IAlarmHandler.cs" />
+    <Compile Include="MiddlePackage\Alarms\IMidAlarmAgent.cs" />
+    <Compile Include="MiddlePackage\Alarms\NullObjAlarmHandler.cs" />
+    <Compile Include="MiddlePackage\Alarms\UmtcAlarmHandler.cs" />
+    <Compile Include="MiddlePackage\Battery\BatteryStatus.cs" />
+    <Compile Include="MiddlePackage\Battery\IBatteryHandler.cs" />
+    <Compile Include="MiddlePackage\Battery\IMidBatteryAgent.cs" />
+    <Compile Include="MiddlePackage\Battery\NullObjBatteryHandler.cs" />
+    <Compile Include="MiddlePackage\Battery\UmtcBatteryHandler.cs" />
+    <Compile Include="MiddlePackage\IMiddlePackageAgent.cs" />
+    <Compile Include="MiddlePackage\Main\Control\AgvcConnector.cs" />
+    <Compile Include="MiddlePackage\Main\Control\MainAlarmHandler.cs" />
+    <Compile Include="MiddlePackage\Main\Control\MainFlowHandler.cs" />
+    <Compile Include="MiddlePackage\Main\Control\MapHandler.cs" />
+    <Compile Include="MiddlePackage\Main\Control\UserAgent.cs" />
+    <Compile Include="MiddlePackage\Main\MainDefines.cs" />
+    <Compile Include="MiddlePackage\Main\Model\AgvcConnectionModel\Agvmessage.cs" />
+    <Compile Include="MiddlePackage\Main\Model\Configs\AgvcConnectorConfig.cs" />
+    <Compile Include="MiddlePackage\Main\Model\Configs\AlarmConfig.cs" />
+    <Compile Include="MiddlePackage\Main\Model\Configs\BatteryLog.cs" />
+    <Compile Include="MiddlePackage\Main\Model\Configs\InitialConfig.cs" />
+    <Compile Include="MiddlePackage\Main\Model\Configs\MainFlowConfig.cs" />
+    <Compile Include="MiddlePackage\Main\Model\Configs\MapConfig.cs" />
+    <Compile Include="MiddlePackage\Main\Model\InitialEventArgs.cs" />
+    <Compile Include="MiddlePackage\Main\Model\Map\BeamDisableArgs.cs" />
+    <Compile Include="MiddlePackage\Main\Model\Map\MapAddress.cs" />
+    <Compile Include="MiddlePackage\Main\Model\Map\MapAddressOffset.cs" />
+    <Compile Include="MiddlePackage\Main\Model\Map\MapAgvStation.cs" />
+    <Compile Include="MiddlePackage\Main\Model\Map\MapInfo.cs" />
+    <Compile Include="MiddlePackage\Main\Model\Map\MapPortId.cs" />
+    <Compile Include="MiddlePackage\Main\Model\Map\MapPosition.cs" />
+    <Compile Include="MiddlePackage\Main\Model\Map\MapSection.cs" />
+    <Compile Include="MiddlePackage\Main\Model\Map\MapSectionBeamDisable.cs" />
+    <Compile Include="MiddlePackage\Main\Model\Map\MapVector.cs" />
+    <Compile Include="MiddlePackage\Main\Model\TransferCommand\AgvcTransferCommand.cs" />
+    <Compile Include="MiddlePackage\Main\Model\TransferCommand\EmptyTransCmd.cs" />
+    <Compile Include="MiddlePackage\Main\Model\TransferCommand\LoadCmdInfo.cs" />
+    <Compile Include="MiddlePackage\Main\Model\TransferCommand\MoveCmdInfo.cs" />
+    <Compile Include="MiddlePackage\Main\Model\TransferCommand\RobotCommand.cs" />
+    <Compile Include="MiddlePackage\Main\Model\TransferCommand\TransferStep.cs" />
+    <Compile Include="MiddlePackage\Main\Model\TransferCommand\UnloadCmdInfo.cs" />
+    <Compile Include="MiddlePackage\Main\Model\Vehicle.cs" />
+    <Compile Include="MiddlePackage\Main\Model\VehicleIntegrateStatus.cs" />
+    <Compile Include="MiddlePackage\MidRequestArgs.cs" />
+    <Compile Include="MiddlePackage\Move\AddressArrivalArgs.cs" />
+    <Compile Include="MiddlePackage\Move\IMidMoveAgent.cs" />
+    <Compile Include="MiddlePackage\Move\IMoveHandler.cs" />
+    <Compile Include="MiddlePackage\Move\MoveCommandArgs.cs" />
+    <Compile Include="MiddlePackage\Move\MoveStatus.cs" />
+    <Compile Include="MiddlePackage\Move\MovingGuide.cs" />
+    <Compile Include="MiddlePackage\Move\NullObjMoveHandler.cs" />
+    <Compile Include="MiddlePackage\Move\UmtcMoveHandler.cs" />
+    <Compile Include="MiddlePackage\RemoteMode\AutoStateArgs.cs" />
+    <Compile Include="MiddlePackage\RemoteMode\IMidRemoteModeAgent.cs" />
+    <Compile Include="MiddlePackage\RemoteMode\IRemoteModeHandler.cs" />
+    <Compile Include="MiddlePackage\RemoteMode\NullObjRemoteModeHandler.cs" />
+    <Compile Include="MiddlePackage\RemoteMode\UmtcRemoteModeHandler.cs" />
+    <Compile Include="MiddlePackage\Robot\CarrierSlotStatus.cs" />
+    <Compile Include="MiddlePackage\Robot\IMidRobotAgent.cs" />
+    <Compile Include="MiddlePackage\Robot\IRobotHandler.cs" />
+    <Compile Include="MiddlePackage\Robot\NullObjRobotHandler.cs" />
+    <Compile Include="MiddlePackage\Robot\RobotStatus.cs" />
+    <Compile Include="MiddlePackage\Robot\UmtcRobotHandler.cs" />
+    <Compile Include="MiddlePackage\Tools\ExtensionMethods.cs" />
+    <Compile Include="MiddlePackage\Tools\IMessageHandler.cs" />
+    <Compile Include="MiddlePackage\Tools\MessageHandlerArgs.cs" />
+    <Compile Include="MIPCControl\Control\MIPCControlHandler.cs" />
+    <Compile Include="Main\Control\LoggerAgent.cs" />
+    <Compile Include="Main\Control\AlarmHandler.cs" />
+    <Compile Include="MIPCControl\Control\SafetySensorControlHandler.cs" />
+    <Compile Include="MIPCControl\Control\SafetySensor\SafetySensor.cs" />
+    <Compile Include="MIPCControl\Control\SafetySensor\SafetySensor_Bumper.cs" />
+    <Compile Include="MIPCControl\Control\SafetySensor\SafetySensor_EMO.cs" />
+    <Compile Include="MIPCControl\Control\SafetySensor\SafetySensor_Sensor.cs" />
+    <Compile Include="MIPCControl\Control\SafetySensor\SafetySensor_Tim781.cs" />
+    <Compile Include="MIPCControl\Control\ShareMemory\ShareMemoryReader.cs" />
+    <Compile Include="MIPCControl\Control\ShareMemory\ShareMemoryWriter.cs" />
+    <Compile Include="MIPCControl\MIPCControlDefines.cs" />
+    <Compile Include="MIPCControl\Model\Configs\MIPCConfig.cs" />
+    <Compile Include="MIPCControl\Model\Configs\MIPCData.cs" />
+    <Compile Include="MIPCControl\Model\Configs\MIPCPortData.cs" />
+    <Compile Include="MIPCControl\Model\Configs\SafetySensorConfig.cs" />
+    <Compile Include="MIPCControl\Model\Configs\SafetySensorData.cs" />
+    <Compile Include="MIPCControl\Model\MIPCData\MIPCControlData.cs" />
+    <Compile Include="MIPCControl\Model\MIPCData\MIPCPollingData.cs" />
+    <Compile Include="MIPCControl\Model\Modbus\ModbusData.cs" />
+    <Compile Include="MIPCControl\Model\Modbus\SendAndReceive.cs" />
+    <Compile Include="MIPCControl\View\MIPCViewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MIPCControl\View\MIPCViewForm.Designer.cs">
+      <DependentUpon>MIPCViewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MIPCControl\View\UserControlForm\MIPCClassificationForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MIPCControl\View\UserControlForm\MIPCClassificationForm.Designer.cs">
+      <DependentUpon>MIPCClassificationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MIPCControl\View\UserControlForm\MIPCMotionCommandForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MIPCControl\View\UserControlForm\MIPCMotionCommandForm.Designer.cs">
+      <DependentUpon>MIPCMotionCommandForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MIPCControl\View\UserControl\MIPCInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MIPCControl\View\UserControl\MIPCInfo.Designer.cs">
+      <DependentUpon>MIPCInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MoveControl\Control\CreateMoveControlList.cs" />
+    <Compile Include="MoveControl\Control\Driver\Driver.cs" />
+    <Compile Include="MoveControl\Control\Driver\Locate\LocateDriver.cs" />
+    <Compile Include="MoveControl\Control\Driver\Locate\LocateDriver_AlignmentValue.cs" />
+    <Compile Include="MoveControl\Control\Driver\Locate\LocateDriver_BarcodeMapSystem.cs" />
+    <Compile Include="MoveControl\Control\Driver\Locate\SLAM\LocateDriver_SLAM.cs" />
+    <Compile Include="MoveControl\Control\Driver\Locate\SLAM\LocateDriver_SLAM_BITO.cs" />
+    <Compile Include="MoveControl\Control\Driver\Locate\SLAM\LocateDriver_SLAM_Sick.cs" />
+    <Compile Include="MoveControl\Control\LocateControlHandler.cs" />
+    <Compile Include="MoveControl\Control\MotionControlHandler.cs" />
+    <Compile Include="MoveControl\Control\MoveControlHandler.cs" />
+    <Compile Include="MoveControl\Control\SensorSafetyControl.cs" />
+    <Compile Include="MoveControl\Control\SimulateControl.cs" />
+    <Compile Include="MoveControl\Control\UpdateControlHandler.cs" />
+    <Compile Include="MoveControl\Control\WallSettingControl.cs" />
+    <Compile Include="MoveControl\Model\Configs\CreateMoveCommandListConfig.cs" />
+    <Compile Include="MoveControl\Model\Configs\Locate\BarcodeMapSystemConfig.cs" />
+    <Compile Include="MoveControl\Model\Configs\Locate\LocateControlConfig.cs" />
+    <Compile Include="MoveControl\Model\Configs\Locate\LocateDriver_SLAM_SickConfig.cs" />
+    <Compile Include="MoveControl\Model\Configs\Locate\LocateDriver_SR2000Config.cs" />
+    <Compile Include="MoveControl\Model\Configs\Motion\AxisData.cs" />
+    <Compile Include="MoveControl\Model\Configs\MoveControlConfig.cs" />
+    <Compile Include="MoveControl\Model\Configs\SafetyData.cs" />
+    <Compile Include="MoveControl\Model\Configs\TimeValueConfig.cs" />
+    <Compile Include="MoveControl\Model\Configs\WallSettingConfig.cs" />
+    <Compile Include="MoveControl\Model\CreateCommandList\Command.cs" />
+    <Compile Include="MoveControl\Model\CreateCommandList\DecompositionCommandData.cs" />
+    <Compile Include="MoveControl\Model\CreateCommandList\MoveCommandData.cs" />
+    <Compile Include="MoveControl\Model\CreateCommandList\MoveCommandRecord.cs" />
+    <Compile Include="MoveControl\Model\CreateCommandList\OneMoveCommand.cs" />
+    <Compile Include="MoveControl\Model\CreateCommandList\ReserveData.cs" />
+    <Compile Include="MoveControl\Model\CreateCommandList\SectionLine.cs" />
+    <Compile Include="MoveControl\Model\CreateCommandList\VChangeData.cs" />
+    <Compile Include="MoveControl\Model\Locate\BarcodeData.cs" />
+    <Compile Include="MoveControl\Model\Locate\BarcodeDataInMap.cs" />
+    <Compile Include="MoveControl\Model\Locate\BarcodeMap.cs" />
+    <Compile Include="MoveControl\Model\Locate\BarcodeReaderData.cs" />
+    <Compile Include="MoveControl\Model\Locate\BarocdeLineMap.cs" />
+    <Compile Include="MoveControl\Model\Locate\LocateAGVPosition.cs" />
+    <Compile Include="MoveControl\Model\Locate\LocateControlData.cs" />
+    <Compile Include="MoveControl\Model\Locate\LocateDriverConfig.cs" />
+    <Compile Include="MoveControl\Model\Locate\SectionDeviationTheta.cs" />
+    <Compile Include="MoveControl\Model\Locate\SLAM\SectionLineTransferData.cs" />
+    <Compile Include="MoveControl\Model\Locate\SLAM\SLAMOffseet.cs" />
+    <Compile Include="MoveControl\Model\Locate\SLAM\SLAMTransfer.cs" />
+    <Compile Include="MoveControl\Model\Locate\SLAM\SLAMTransferData.cs" />
+    <Compile Include="MoveControl\Model\Locate\TimeStampData.cs" />
+    <Compile Include="MoveControl\Model\Wall\MapData.cs" />
+    <Compile Include="MoveControl\Model\Motion\AxisFeedbackData.cs" />
+    <Compile Include="MoveControl\Model\Motion\MotionControlData.cs" />
+    <Compile Include="MoveControl\Model\MoveControl\MoveControlData.cs" />
+    <Compile Include="MoveControl\Model\MoveControl\MoveControlSensorStatus.cs" />
+    <Compile Include="MoveControl\Model\Simulate\SimulateData.cs" />
+    <Compile Include="MoveControl\Model\Simulate\SimulateMoveVelocityData.cs" />
+    <Compile Include="MoveControl\Model\Simulate\SimulateVelocityData.cs" />
+    <Compile Include="MoveControl\Model\Simulate\SimulateVelociy.cs" />
+    <Compile Include="MoveControl\Model\Wall\Wall.cs" />
+    <Compile Include="MoveControl\MoveControlDefine.cs" />
+    <Compile Include="Main\Control\InitialEventArgs.cs" />
+    <Compile Include="Main\Control\Tools\ConfigHandler.cs" />
+    <Compile Include="Main\Control\Tools\Logger\LogBasicConfigs.cs" />
+    <Compile Include="Main\Control\Tools\Logger\LogFormat.cs" />
+    <Compile Include="Main\Control\Tools\Logger\Logger.cs" />
+    <Compile Include="Main\Control\Tools\Logger\LogType.cs" />
+    <Compile Include="Main\Control\Tools\XmlHandler.cs" />
+    <Compile Include="Main\Model\Alarm.cs" />
+    <Compile Include="Main\MainDefines.cs" />
+    <Compile Include="Main\Model\Configs\MainFlowConfig.cs" />
+    <Compile Include="Main\Model\Map\MapInfo.cs" />
+    <Compile Include="Main\Model\Map\MapPosition.cs" />
+    <Compile Include="Main\Model\TransferStepInfo\MoveCmdInfo.cs" />
+    <Compile Include="Main\View\UserControls\UcVehicleImage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Main\View\UserControls\UcVehicleImage.Designer.cs">
+      <DependentUpon>UcVehicleImage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\Model\localData\VehicleLocation.cs" />
+    <Compile Include="MoveControl\View\MoveControlForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MoveControl\View\MoveControlForm.Designer.cs">
+      <DependentUpon>MoveControlForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MoveControl\View\UserControl\BigSizeWallSettingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MoveControl\View\UserControl\BigSizeWallSettingForm.Designer.cs">
+      <DependentUpon>BigSizeWallSettingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MoveControl\View\UserControl\JogPitchLocateData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MoveControl\View\UserControl\JogPitchLocateData.Designer.cs">
+      <DependentUpon>JogPitchLocateData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\View\UserControls\LPMSDataView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Main\View\UserControls\LPMSDataView.Designer.cs">
+      <DependentUpon>LPMSDataView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MoveControl\View\UserControl\MapPicture.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MoveControl\View\UserControl\MapPicture.Designer.cs">
+      <DependentUpon>MapPicture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MoveControl\View\UserControl\WallSetting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MoveControl\View\UserControl\WallSetting.Designer.cs">
+      <DependentUpon>WallSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Main\Model\Map\MapAddress.cs" />
+    <Compile Include="Main\Model\Map\MapSection.cs" />
+    <Compile Include="Main\Control\MapHandler.cs" />
+    <Compile Include="Main\View\InitialForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\View\InitialForm.Designer.cs">
+      <DependentUpon>InitialForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Main\View\ProFaceForm.resx">
+      <DependentUpon>ProFaceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\View\UserControls\KeyboardNumber.resx">
+      <DependentUpon>KeyboardNumber.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\View\UserControls\LabelAndTextBox.resx">
+      <DependentUpon>LabelAndTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\View\UserControls\LabelList.resx">
+      <DependentUpon>LabelList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\View\UserControls\LabelNameAndValue.resx">
+      <DependentUpon>LabelNameAndValue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\View\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\View\UserControls\AddressPicture.resx">
+      <DependentUpon>AddressPicture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\View\UserControls\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\View\UserControls\MoveControlConfig_Safety.resx">
+      <DependentUpon>MoveControlConfig_Safety.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\View\UserControls\MoveControlConfig_SensorBypass.resx">
+      <DependentUpon>MoveControlConfig_SensorBypass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\View\UserControls\PIOForm.resx">
+      <DependentUpon>PIOForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\View\UserControls\PIOHistoryForm.resx">
+      <DependentUpon>PIOHistoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\View\UserControls\PIOTimeAndValueUserControl.resx">
+      <DependentUpon>PIOTimeAndValueUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\View\UserControls\ProgramVersion.resx">
+      <DependentUpon>ProgramVersion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\View\UserControls\SafetySensorByPass.resx">
+      <DependentUpon>SafetySensorByPass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MIPCControl\View\MIPCViewForm.resx">
+      <DependentUpon>MIPCViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MIPCControl\View\UserControlForm\MIPCClassificationForm.resx">
+      <DependentUpon>MIPCClassificationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MIPCControl\View\UserControlForm\MIPCMotionCommandForm.resx">
+      <DependentUpon>MIPCMotionCommandForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MIPCControl\View\UserControl\MIPCInfo.resx">
+      <DependentUpon>MIPCInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MoveControl\View\MoveControlForm.resx">
+      <DependentUpon>MoveControlForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MoveControl\View\UserControl\BigSizeWallSettingForm.resx">
+      <DependentUpon>BigSizeWallSettingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MoveControl\View\UserControl\JogPitchLocateData.resx">
+      <DependentUpon>JogPitchLocateData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\View\UserControls\LPMSDataView.resx">
+      <DependentUpon>LPMSDataView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MoveControl\View\UserControl\MapPicture.resx">
+      <DependentUpon>MapPicture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MoveControl\View\UserControl\WallSetting.resx">
+      <DependentUpon>WallSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\View\UserControls\UcVehicleImage.resx">
+      <DependentUpon>UcVehicleImage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\View\InitialForm.resx">
+      <DependentUpon>InitialForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Config\NLog.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MiddlePackage\Main\Model\AgvcConnectionModel\agvmessage.proto" />
+    <None Include="OutsideDll\TCPIPTrxControl.dll.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Resource\Close_32x32.png" />
+    <None Include="Resource\Mirle_Home.JPG" />
+    <None Include="Resource\Mirle_LOGO.jpg" />
+    <None Include="Resource\Mirle_Slogan.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="OutsideDll\Google.Protobuf.dll" />
+    <Content Include="OutsideDll\Google.Protobuf.xml" />
+    <Content Include="OutsideDll\Logrila.Logging.dll" />
+    <Content Include="OutsideDll\NLog.dll" />
+    <Content Include="OutsideDll\NLog.xml" />
+    <Content Include="OutsideDll\Stateless.dll" />
+    <Content Include="OutsideDll\Stateless.xml" />
+    <Content Include="OutsideDll\TCPIPTrxControl.dll" />
+    <Content Include="OutsideDll\TCPIPTrxControl.pdb" />
+    <None Include="Resources\buttonBackground.png" />
+    <None Include="Resources\logo.bmp" />
+    <Content Include="Resource\AlarmForm.ico" />
+    <Content Include="Resource\CommuForm.ico" />
+    <Content Include="Resource\MainForm.ico" />
+    <Content Include="Resource\tool1.png" />
+    <Content Include="Resource\tool2.png" />
+    <Content Include="Resource\VehHasCarrier.ico" />
+    <Content Include="VehHasCarrier.ico" />
+    <None Include="Resource\VehHasNoCarrier.jpg" />
+    <None Include="Resource\VehHasCarrier.jpg" />
+    <None Include="Resource\Idle_16x16.png" />
+    <None Include="Resource\CrossHair_16x16.png" />
+    <None Include="Resource\Bulb_Red_32x32.png" />
+    <None Include="Resource\Bulb_Green_32x32.png" />
+    <None Include="Resource\Bulb_Blue_32x32.png" />
+    <None Include="Resource\Auto_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="LoadUnloadControl\View\" />
+    <Folder Include="MiddlePackage\Main\View\" />
+    <Folder Include="MiddlePackage\SafetySensor\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>此專案參考這部電腦上所缺少的 NuGet 套件。請啟用 NuGet 套件還原，以下載該套件。如需詳細資訊，請參閱 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的檔案是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\NUnit.3.12.0\build\NUnit.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\NUnit.3.12.0\build\NUnit.props'))" />
+    <Error Condition="!Exists('..\packages\NUnit3TestAdapter.3.15.1\build\net35\NUnit3TestAdapter.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\NUnit3TestAdapter.3.15.1\build\net35\NUnit3TestAdapter.props'))" />
+  </Target>
+</Project>

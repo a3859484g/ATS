@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<BatteryConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <HighBattery_SOC>95</HighBattery_SOC>
+  <HighBattery_V>54</HighBattery_V>
+  <LowBattery_SOC>40</LowBattery_SOC>
+  <LowBattery_V>48</LowBattery_V>
+  <Battery_WarningTemp>38</Battery_WarningTemp>
+  <ShutDownBattery_SOC>35</ShutDownBattery_SOC>
+  <ShutDownBattery_V>47</ShutDownBattery_V>
+  <Battery_ShowDownTemp>39</Battery_ShowDownTemp>
+  <ChargingMaxA>21</ChargingMaxA>
+  <ChargingMaxTemp>38</ChargingMaxTemp>
+  <AlarmDelayTime>10000</AlarmDelayTime>
+  <ShutDownDelayTime>3000</ShutDownDelayTime>
+</BatteryConfig>

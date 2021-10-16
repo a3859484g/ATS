@@ -1,0 +1,9 @@
+{
+  "Ip": "127.0.0.1",
+  "Port": 6789,
+  "IsServer": false,
+  "SpecVersion": "2.7",
+  "T3Timeout": 20,
+  "T6Timeout": 20,
+  "LinkTestIntervalMs": 60000
+}

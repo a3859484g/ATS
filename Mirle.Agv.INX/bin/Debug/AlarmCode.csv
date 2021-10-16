@@ -1,0 +1,242 @@
+Id,AlarmText,Level,Description
+100000,MoveControl主Thread跳Exception,Alarm,MoveControl主Thread跳Exception
+100001,超過觸發區間,Alarm,超過觸發區間
+100100,Move_EnableTimeout,Alarm,Move_EnableTimeout
+100300,SlowStop_Timeout,Alarm,SlowStop_Timeout
+100600,SpinTurn_Timeout,Alarm,SpinTurn_Timeout
+100800,End_SecondCorrectionTimeout,Warn,End_SecondCorrectionTimeout
+100801,End_ServoOffTimeout,Warn,End_ServoOffTimeout
+101000,MoveMethod層_DriverReturnFalse,Alarm,MoveMethod層_DriverReturnFalse
+102000,LocateControl初始化失敗,Alarm,LocateControl初始化失敗
+102300,BITO初始化失敗,Alarm,BITO初始化失敗
+102301,BITO連線失敗,Alarm,BITO連線失敗
+102302,BITO資料格式錯誤,Warn,BITO資料格式錯誤
+102303,BITO精度迷航,Warn,BITO精度迷航
+102304,BITO未取得定位資料,Alarm,BITO未取得定位資料
+103000,命令分解失敗,Warn,命令分解失敗
+104100,拒絕移動命令_資料格式錯誤,Warn,拒絕移動命令_資料格式錯誤
+104101,拒絕移動命令_MoveControlNotReady,Warn,拒絕移動命令_MoveControlNotReady
+104102,拒絕移動命令_MoveControlErrorBitOn,Alarm,拒絕移動命令_MoveControlErrorBitOn
+104103,拒絕移動命令_充電中,Warn,拒絕移動命令_充電中
+104104,拒絕移動命令_Fork不在Home點,Alarm,拒絕移動命令_Fork不在Home點
+104106,拒絕移動命令_迷航中,Alarm,拒絕移動命令_迷航中
+104107,拒絕移動命令_移動命令中,Warn,拒絕移動命令_移動命令中
+104108,拒絕移動命令_不在Section上,Alarm,拒絕移動命令_不在Section上
+104200,安全保護停止_Fork不在Home點,Alarm,安全保護停止_Fork不在Home點
+104201,安全保護停止_充電中,Alarm,安全保護停止_充電中
+104202,安全保護停止_角度偏差過大,Alarm,安全保護停止_角度偏差過大
+104203,安全保護停止_軌道偏差過大,Alarm,安全保護停止_軌道偏差過大
+104204,安全保護停止_出彎過久沒取得定位資料,Alarm,安全保護停止_出彎過久沒取得定位資料
+104205,安全保護停止_直線過久沒取得定位資料,Alarm,安全保護停止_直線過久沒取得定位資料
+104207,安全保護停止_速度變化異常,Alarm,安全保護停止_速度變化異常
+104209,安全保護停止_定位Control異常,Alarm,安全保護停止_定位Control異常
+104210,安全保護停止_人為控制,Alarm,安全保護停止_人為控制
+104211,安全保護停止_Bumper觸發,Alarm,安全保護停止_Bumper觸發
+104212,安全保護停止_EMO停止,Alarm,安全保護停止_EMO停止
+104214,安全保護停止_SafetySensorAlarm,Alarm,安全保護停止_SafetySensorAlarm
+104215,安全保護停止_MotionAlarm,Alarm,安全保護停止_MotionAlarm
+104216,安全保護停止_走行中安全迴路異常,Alarm,安全保護停止_走行中安全迴路異常
+104217,安全保護停止_走行中定位資料過久未更新,Alarm,安全保護停止_走行中定位資料過久未更新
+105001,MoveControl_ErrorBitOn,Alarm,MoveControl_ErrorBitOn
+200000,MIPC初始化失敗,Alarm,MIPC初始化失敗
+200001,MIPC連線失敗,Alarm,MIPC連線失敗
+200002,MIPC斷線,Alarm,MIPC斷線
+200003,MIPC通訊異常,Warn,MIPC通訊異常
+200004,MIPC回傳資料異常,Warn,MIPC回傳資料異常
+200005,ByPass聲音燈號IO自動傳送,Warn,ByPass聲音燈號IO自動傳送
+200100,MIPC_DeviceHeartBeatLoss,Alarm,MIPC_DeviceHeartBeatLoss
+200101,MIPC_IPCHeartBeatLoss,Alarm,MIPC_IPCHeartBeatLoss
+200102,MIPC_Motin_EMS,Alarm,MIPC_Motin_EMS
+200103,MIPC_SLAM誤差過大,Alarm,MIPC_SLAM誤差過大
+200104,MIPC_SLAM過久沒更新,Alarm,MIPC_SLAM過久沒更新
+200105,MIPC_走行驅動器異常,Alarm,MIPC_走行驅動器異常
+200106,MIPC_電池低電壓斷電,Alarm,MIPC_電池低電壓斷電
+200107,MIPC_四輪ServoOnOff不同步,Alarm,MIPC_四輪ServoOnOff不同步
+200108,MIPC_驅動器過電流,Alarm,MIPC_驅動器過電流
+200109,MIPC_速度追隨誤差過大,Alarm,MIPC_速度追隨誤差過大
+200110,MIPC_Alarm11,Alarm,MIPC_Alarm11
+200111,MIPC_超過命令速度上限,Alarm,MIPC_超過命令速度上限
+200112,MIPC_斷動力電,Alarm,MIPC_斷動力電
+200113,MIPC_IPCEMS,Alarm,MIPC_IPCEMS
+200114,MIPC_SetPosition角度誤差過大,Alarm,MIPC_SetPosition角度誤差過大
+200115,MIPC_Alarm16,Alarm,MIPC_Alarm16
+200116,MIPC_Alarm17,Alarm,MIPC_Alarm17
+200117,MIPC_Alarm18,Alarm,MIPC_Alarm18
+200118,MIPC_Alarm19,Alarm,MIPC_Alarm19
+200119,MIPC_DeviceDisconnectCounter,Alarm,MIPC_DeviceDisconnectCounter
+200200,LowBattery_SOC,Warn,LowBattery_SOC
+200201,LowBattery_V,Warn,LowBattery_V
+200202,ShutDown_LowBattery_SOC,Alarm,ShutDown_LowBattery_SOC
+200203,ShutDown_LowBattery_V,Alarm,ShutDown_LowBattery_V
+200204,SafetyRelayNotOK,Alarm,SafetyRelayNotOK
+200205,ShutDown_BatteryTemp,Alarm,ShutDown_BatteryTemp
+200206,BatteryWarningTemp,Warn,BatteryWarningTemp
+200207,電池通訊異常,Alarm,電池通訊異常
+200208,電表通訊異常,Alarm,電表通訊異常
+200209,溫度通訊異常,Alarm,溫度通訊異常
+200210,電池BMS異常,Alarm,電池BMS異常
+200300,Getway通訊異常_XFL,Alarm,Getway通訊異常_XFL
+200301,Getway通訊異常_XFR,Alarm,Getway通訊異常_XFR
+200302,Getway通訊異常_XRL,Alarm,Getway通訊異常_XRL
+200303,Getway通訊異常_XRR,Alarm,Getway通訊異常_XRR
+201000,SensorSafety_AlarmByPass,Warn,SensorSafety_AlarmByPass
+201001,SensorSafety_SafetyByPass,Warn,SensorSafety_SafetyByPass
+201002,SensorSafety_停止訊號Timeout,Warn,SensorSafety_停止訊號Timeout
+201100,EMO觸發,Alarm,EMO觸發
+201200,Bumper觸發,Alarm,Bumper觸發
+201300,Sensor觸發,Alarm,Sensor觸發
+201400,AreaSensorAlarm,Alarm,AreaSensorAlarm
+201401,AreaSensor觸發,Alarm,AreaSensor觸發
+202001,解剎車中,Warn,解剎車中
+300000,拒絕取放命令_資料格式錯誤,Alarm,拒絕取放命令_資料格式錯誤
+300001,拒絕取放命令_LoadUnloadControlNotReady,Alarm,拒絕取放命令_LoadUnloadControlNotReady
+300002,拒絕取放命令_LoadUnloadControlErrorBitOn,Alarm,拒絕取放命令_LoadUnloadControlErrorBitOn
+300003,拒絕取放命令_Exception,Alarm,拒絕取放命令_Exception
+300004,取放貨主流程Exception,Alarm,取放貨主流程Exception
+300100,取放貨初始化失敗_MIPCTag缺少,Alarm,取放貨初始化失敗_MIPCTag缺少
+300110,取放貨補正元件_BarcoderReader連線失敗,Alarm,取放貨補正元件_BarcoderReader連線失敗
+300111,取放貨補正元件_BarcoderReader斷線,Alarm,取放貨補正元件_BarcoderReader斷線
+300120,取放貨補正元件_雷射測距連線失敗,Alarm,取放貨補正元件_雷射測距連線失敗
+300121,取放貨補正元件_雷射測距斷線,Alarm,取放貨補正元件_雷射測距斷線
+300122,CSTIDReader_連線失敗,Alarm,CSTIDReader_連線失敗
+300123,CSTIDReader_斷線,Alarm,CSTIDReader_斷線
+300200,Z軸驅動器異常,Alarm,Z軸驅動器異常
+300201,Z軸_Slave驅動器異常,Alarm,Z軸_Slave驅動器異常
+300202,P軸驅動器異常,Alarm,P軸驅動器異常
+300203,Theta軸驅動器異常,Alarm,Theta軸驅動器異常
+300204,Roller驅動器異常,Alarm,Roller驅動器異常
+300300,Z軸電流過大,Alarm,Z軸電流過大
+300301,Z軸_Slave電流過大,Alarm,Z軸_Slave電流過大
+300302,Z軸主從Encoder落差過大,Alarm,Z軸主從Encoder落差過大
+300303,Z軸Slave上極限觸發,Alarm,Z軸Slave上極限觸發
+300304,Z軸Slave下極限觸發,Alarm,Z軸Slave下極限觸發
+300305,平衡Z軸模式中,Alarm,平衡Z軸模式中
+300400,Getway通訊異常_Z軸,Alarm,Getway通訊異常_Z軸
+300401,Getway通訊異常_Z軸_Slave,Alarm,Getway通訊異常_Z軸_Slave
+300402,Getway通訊異常_P軸,Alarm,Getway通訊異常_P軸
+300403,Getway通訊異常_Theta軸,Alarm,Getway通訊異常_Theta軸
+300404,Getway通訊異常_Roller,Alarm,Getway通訊異常_Roller
+301011,TA1_Timeout,Warn,TA1_Timeout
+301012,TA2_Timeout,Warn,TA2_Timeout
+301013,TA3_Timeout,Warn,TA3_Timeout
+301014,TP1_Timeout,Warn,TP1_Timeout
+301015,TP2_Timeout,Warn,TP2_Timeout
+301016,TP3_Timeout,Alarm,TP3_Timeout
+301017,TP4_Timeout,Alarm,TP4_Timeout
+301018,TP5_Timeout,Warn,TP5_Timeout
+301051,取放貨中EQPIOOff,Warn,取放貨中EQPIOOff
+301052,取放命令與EQRequest不相符,Warn,取放命令與EQRequest不相符
+301054,RollerStop後CV訊號異常,Alarm,RollerStop後CV訊號異常
+301055,啟用PIOTimeout測試,Warn,啟用PIOTimeout測試
+301100,取放貨中CV檢知異常,Warn,取放貨中CV檢知異常
+301101,取放貨中EMS,Alarm,取放貨中EMS
+301102,取貨_LoadingOn異常,Warn,取貨_LoadingOn異常
+301103,放貨_LoadingOff異常,Warn,放貨_LoadingOff異常
+301104,AlignmentNG,Warn,AlignmentNG
+301105,HomeSensor未On,Alarm,HomeSensor未On
+301106,Z軸上定位未On,Alarm,Z軸上定位未On
+301107,取放貨異常_MIPCCommandReturnFail,Alarm,取放貨異常_MIPCCommandReturnFail
+301108,動作結束但不再InpositionRange,Alarm,動作結束但不再InpositionRange
+301109,AlignmentValueNG,Warn,AlignmentValueNG
+301110,取放中極限觸發,Alarm,取放中極限觸發
+301111,取放中軸異常,Alarm,取放中軸異常
+301112,取放中安全迴路異常,Alarm,取放中安全迴路異常
+301113,RollerStopTimeout,Alarm,RollerStopTimeout
+301114,CVSensor異常,Warn,CVSensor異常
+301115,Loading邏輯和Sensor不相符,Alarm,Loading邏輯和Sensor不相符
+301116,Fork不在Home點,Alarm,Fork不在Home點
+301117,ServoOnTimeout,Alarm,ServoOnTimeout
+301118,Port站ES或HO_AVBLNotOn,Warn,Port站ES或HO_AVBLNotOn
+301119,取放貨站點資訊異常,Alarm,取放貨站點資訊異常
+301120,取放貨異常_Z軸升降中CVSensor異常,Alarm,取放貨異常_Z軸升降中CVSensor異常
+302000,回Home失敗_CVSensor狀態異常,Warn,回Home失敗_CVSensor狀態異常
+302001,回Home失敗_CST回CV_Timeout,Warn,回Home失敗_CST回CV_Timeout
+302002,回Home失敗_P軸不在Home,Warn,回Home失敗_P軸不在Home
+302003,回Home失敗_Theta軸不再Home,Warn,回Home失敗_Theta軸不再Home
+302004,回Home失敗_Z軸不在上定位,Warn,回Home失敗_Z軸不在上定位
+302005,回Home失敗_ServoOn_Timeout,Warn,回Home失敗_ServoOn_Timeout
+302006,回Home失敗_Exception,Warn,回Home失敗_Exception
+302007,回Home失敗_MIPC指令失敗,Warn,回Home失敗_MIPC指令失敗
+302008,回Home失敗_人員觸發停止,Warn,回Home失敗_人員觸發停止
+302009,回Home失敗_極限Sensor未On,Warn,回Home失敗_極限Sensor未On
+302010,回Home失敗_MovingTimeout,Warn,回Home失敗_MovingTimeout
+302011,回Home失敗_HomeSensor未on,Warn,回Home失敗_HomeSensor未on
+302012,回Home失敗_HomeSensor未off,Alarm,回Home失敗_HomeSensor未off
+310000,ChargingConfrimSensorNotOn,Warn,ChargingConfrimSensorNotOn
+310001,ChargerStationNotService,Warn,ChargerStationNotService
+310002,ChargerStationWaitOPTimeout,Warn,ChargerStationWaitOPTimeout
+310003,ChargerStationWaitChargingTimeout,Warn,ChargerStationWaitChargingTimeout
+310004,ChargerStationAlarm,Warn,ChargerStationAlarm
+310005,ChargerStationWarning,Warn,ChargerStationWarning
+310006,ChargerStationFullCharging,Warn,ChargerStationFullCharging
+310007,ChargingTimeout,Warn,ChargingTimeout
+310008,ChargingWith_OPOff,Warn,ChargingWith_OPOff
+310009,ChargingWith_SensorEMO,Alarm,ChargingWith_SensorEMO
+310010,ChargingOverA,Alarm,ChargingOverA
+310011,Charging溫度過高,Alarm,Charging溫度過高
+310012,ChargerStationWaitHPTimeout,Alarm,ChargerStationWaitHPTimeout
+400100,無法Auto_MoveControlNotReady,Warn,無法Auto_MoveControlNotReady
+400101,無法Auto_Fork不在Home點上,Warn,無法Auto_Fork不在Home點上
+400102,無法Auto_MiddlerInitialFail,Warn,無法Auto_MiddlerInitialFail
+400103,無法Auto_尚有Alarm,Warn,無法Auto_尚有Alarm
+400104,無法Auto_ResetAlarm中,Warn,無法Auto_ResetAlarm中
+400105,無法Auto_讀取CSTID異常,Warn,無法Auto_讀取CSTID異常
+400106,無法Auto_定位資料異常,Warn,無法Auto_定位資料異常
+400207,無法Auto_移動中,Warn,無法Auto_移動中
+400208,無法Auto_搖桿控制中,Warn,無法Auto_搖桿控制中
+400209,無法Auto_AGV不在Section上,Warn,無法Auto_AGV不在Section上
+000001,AlreadyHaveCmd,Warn,Agv already have a transfer command on middler get new transfer command.
+000002,LowPowerCharging,Warn,Battery capacity enter low power threshold.
+000003,LoadingOff,Warn,Loading is off after load finished.
+000004,CarrierIdReadFail,Warn,Carrier ID is EMPTY after load finished.
+000005,CarrierIdIsError,Warn,Carrier ID is ERROR after load finished.
+000006,MoveFinishFail,Warn,Move finish fail.
+000007,LoadingOn,Warn,Loading is ON after unload finished.
+000008,ForkCommandExist,Warn,Fork command is exist before unload.
+000009,VehicleCannotUnload,Warn,Vehicle is not in unload position and cannot unload.
+000010,ForkCommandExist,Warn,Fork command is exist before load.
+000011,PositionLostWithCmd,Warn,Vehicle is not in guide sections.
+000012,ChargeDirectionError,Warn,This address is a couple but no charge direction.
+000013,StartChargeTimeout,Warn,Charging is OFF after send start charge command to plc.
+000014,StopChargeTimeout,Alarm,Charging is ON after send stop charge command to plc.
+000015,VehicleCannotload,Warn,Vehicle is not in load position and cannot load.
+000016,AlreadyHaveCst,Warn,Vehicle already have cassette cannot load.
+000017,NoCstToUnload,Warn,Vehicle has no cassette to unload.
+000018,MapCheckFail,Alarm,AgvcMoveCommand is not match the map to move.
+000019,IsNotTransferCannotOverride,Warn,Vehicle is not in transfer reject override.
+000020,IsNotMoveStepCannotOverride,Warn,Vehicle is not in moving-step reject override.
+000021,IsNotPauseCannotOverride,Warn,Vehicle is not pause by reserve reject override.
+000022,OverrideUnloadAddressUnmatch,Warn,Unload address unmatch current command unload address.
+000023,OverrideLoadAddressUnmatch,Warn,Load address unmatch current command load address.
+000024,OverrideToUnloadIsEmpty,Warn,ToUnloadSections is empty.
+000025,OverrideToLoadIsEmpty,Warn,ToLoadSections is empty.
+000026,CheckOverrideException,Warn,Exception happened in override-check.
+000027,ForkNotHome,Alarm,Fork not home reject transfer command.
+000028,CarrierIdMisMatch,Warn,Carrier ID is mismatch after load finished.
+000029,IsCarrierIdReadReplyTimeout,Warn,Carrier ID read reply is timeout
+000030,VehicleHasAlarm,Warn,Vehicle has alarm cannot do transfer command.
+000031,ManualToAutoFail,Warn,MoveControl status is not idle cannot switch to auto mode.
+000032,ManualToAutoFail,Warn,Real position is null cannot switch to auto mode.
+000033,IsNotTransferCannotAvoid,Warn,Vehicle is not in transfer reject avoid.
+000034,IsNotMoveStepCannotAvoid,Warn,Vehicle is not in moving-step reject avoid.
+000035,IsNotPauseCannotAvoid,Warn,Vehicle is not pause by reserve reject avoid.
+000036,CheckAvoidException,Warn,Exception happened in avoid-check.
+000037,AgvcCallEms,Alarm,Get EMS from AGVC.
+000038,SendRecvTimeout,Alarm,Agvc maybe disconnected.
+000040,AgvlError,Warn,AgvlError
+000042,NearlyAddressInNoSection,Warn,Nearly address in no section.
+000043,AgvlTryAutoFail,Alarm,Please check agvl try auto fail reason in agvm.
+000044,SectionLostPreAuto,Alarm,Agvm can not find section in manual.
+000045,AddressLostPreAuto,Alarm,Agvm can not find address in manual.
+000046,MoveStateErrorPreAuto,Alarm,MoveState is not idle or block can not switch to auto.
+000047,RobotStateErrorPreAuto,Alarm,RobotState is not idle can not switch to auto.
+000048,RobotIsNotHomePreAuto,Alarm,Robot is not home can not switch to auto.
+000049,InterlockError,Alarm,InterlockError.
+000050,VisitStepPrecheckException,Alarm,Visit Step Precheck Exception.
+000051,CstPositionError,Alarm,Agvl report cst position error.
+000052,RecvRobotCommandEnd,Alarm,Agvl report robot command end but not in robot step.
+000053,RobotErrorBeforeLDUD,Alarm,Agvl report robot state not ready to load or unlaod.
+000054,InitialPositionError,Warn,Agvl initial position is too far to address.
+000055,IdleTimeout,Warn,Vehicle in move step but position unchange too long.
+000056,AgvcDisconnect,Warn,Agvc disconnect when sending command.
+000057,LocalDisconnect,Warn,Local disconnect when sending command.

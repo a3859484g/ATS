@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<MapConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <FileDirectory>D:\AGV_Map\demoline</FileDirectory>
+    <AddressCSVFileName>AADDRESS.csv</AddressCSVFileName>
+    <SectionCSVFileName>ASECTION.csv</SectionCSVFileName>
+    <MapScale>0.1</MapScale>
+    <MapBorderLength>3000</MapBorderLength>
+    <AddressWidth>15</AddressWidth>
+    <AddressLineWidth>2</AddressLineWidth>
+</MapConfig>
